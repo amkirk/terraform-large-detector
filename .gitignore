@@ -1,0 +1,3 @@
+# Ignore Terraform state and plugin files:
+*.tfstate
+/.terraform
