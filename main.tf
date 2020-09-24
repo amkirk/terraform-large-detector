@@ -85,7 +85,7 @@ resource "signalfx_detector" "aborted_detector" {
 
   rule {
     description  = "A detector has been aborted."
-    severity     = "Major"
+    severity     = "Critical"
     detect_label = "Detector Aborted"
     # Update notifications with your preferred method here. Email and Slack are shown as examples.
     notifications = ["Email,your-email-address@bar.com"]
