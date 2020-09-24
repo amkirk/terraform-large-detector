@@ -5,7 +5,7 @@
 ###############################################################################################
 
 provider "signalfx" {
-  auth_token = "SkMcNdGmP7Z4wsfJa5_RyQ"
+  auth_token = "<<<YOURAUTHTOKEN>>>"
 }
 
 resource "signalfx_event_feed_chart" "aborted_detectors_event_feed" {
