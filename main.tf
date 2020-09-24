@@ -90,7 +90,7 @@ resource "signalfx_detector" "aborted_detector" {
     # Update notifications with your preferred method here. Email and Slack are shown as examples.
     notifications = ["Email,your-email-address@bar.com"]
     #notifications = ["Slack,credentialId,channel"]
-    runbook_url        = "https://www.google.com"
+    runbook_url        = "${signalfx_dashboard.detectors_dashboard.url}"
     parameterized_body = <<-EOF
    {{#if anomalous}}
     This alert indicates that a detector in your organization has too many MTS and has been aborted. Please
